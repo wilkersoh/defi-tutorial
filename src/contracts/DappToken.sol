@@ -3,6 +3,13 @@ pragma solidity ^0.5.0;
 contract DappToken {
     string  public name = "DApp Token";
     string  public symbol = "DAPP";
+    /**
+        1000000000000000000000000 look like more than 1 million!!
+        it is because solidity don't accept decimals
+        so, we adddecimals = 18
+        1 million has 6 zero
+        1 + 6 zero + 18 zero
+    */
     uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8   public decimals = 18;
 
