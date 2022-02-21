@@ -27,6 +27,9 @@ $ tokenFarm -> list the tokenFarm
 $ tokenFarm.address -> return smart contract address in that network
 ```
 
+# Exit truffle console
+$ .exit
+
 # Get mDai balance
 $ truffle console
 $ mDai = await DaiToken.deployed()
@@ -36,7 +39,7 @@ $ balance = await mDai.balanceOf(accounts[1])
 $ balance.toString()
 $ formattedBalance = web3.utils.fromWei(balance) -> convert into Ether unit
 
-# Ganache
+# Ganache 
 - Link to Workspace Defi-tutorial
 
 
